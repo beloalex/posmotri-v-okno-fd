@@ -1,0 +1,24 @@
+{
+  "name": "posmotri-v-okno-fd",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/beloalex/posmotri-v-okno-fd#readme",
+  "bugs": {
+    "url": "https://github.com/beloalex/posmotri-v-okno-fd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beloalex/posmotri-v-okno-fd.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'"
+  },
+  "dependencies": {
+    "prettier": "^3.8.0",
+    "stylelint": "^17.0.0"
+  }
+}

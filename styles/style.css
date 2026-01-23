@@ -76,9 +76,7 @@ html {
   flex-direction: column;
   width: 399px;
   gap: 26px;
-  width: 100%;
   height: 100%;
-
 }
 
 .content__video-card {

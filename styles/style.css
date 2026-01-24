@@ -8,6 +8,25 @@ html {
   block-size: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .page {
   display: flex;
   align-items: center;
@@ -30,6 +49,7 @@ html {
 }
 
 .search-form {
+  height: 54px;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -55,20 +75,21 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
+  width: 399px;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
+  width: 390px;
   gap: 30px;
 }
 
 .content__list-item {
-  padding: 0px 3px 0px 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__details {
@@ -81,31 +102,31 @@ html {
 
 .content__video-card {
   display: flex;
-  width: 399px;
+  width: 100%;
   justify-content: space-between;
   align-items: start;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
-  min-height: 103px;
+  height: 103px;
   object-fit: contain;
   object-position: center;
 }
 
 .content__video-card-description-container {
-  width: 196px;
+  min-width: 196px;
   flex-grow: 1;
 }
 
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 22px;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -114,11 +135,6 @@ html {
 }
 
 .content__accent {
-  font-family: Oswald;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 94%;
-  text-transform: uppercase;
   color: #545050;
 }
 
@@ -149,7 +165,7 @@ html {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -163,7 +179,7 @@ html {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -191,6 +207,10 @@ html {
 }
 
 .search-form__fieldset {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   border: none;
 }
 
@@ -202,7 +222,7 @@ html {
   cursor: pointer;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline solid #fff 1px;
   text-underline-offset: 2px;
   cursor: pointer;
@@ -215,7 +235,7 @@ html {
   border-right: 0;
   border-left: 0;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -250,7 +270,7 @@ html {
 .button {
   border: 1px solid #fff;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -260,6 +280,7 @@ html {
 }
 
 .more-button {
+  width: 390px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -277,26 +298,6 @@ html {
 
 .button:active {
   background-color: #545050;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* Кастомный скроллбар */
